@@ -1,9 +1,9 @@
-
+// Here I had problems because the button was not connecting in App.css, I changed it and added a div with className and that did the trick
 
 export const Button = (props) => {
 return (
-    <button onClick={props.handle} className={props.color}>
-    {props.name}
-    </button>
+    <div class="button">
+    <button onClick={props.handle}>{props.name}</button>
+    </div>
 );
 };
